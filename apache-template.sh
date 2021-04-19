@@ -32,6 +32,21 @@ tput sgr0 && \
 read && \
 apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
 
+
+# Replace 
+# <Directory /var/www/>
+#        Options Indexes FollowSymLinks
+#        AllowOverride None
+#        Require all granted
+# </Directory>
+# >>
+# <Directory /var/www/>
+#        Options Indexes FollowSymLinks
+#        AllowOverride All
+#        Require all granted
+# </Directory>
+
+
 # ufw regler
 # disable ipv6 https://linuxhint.com/replace_string_in_file_bash/
 # Gør så ipv6 bliver slået fra.
@@ -95,6 +110,10 @@ echo "
     Require all denied
 </Directory>
 "
+
+
+
+
 
 #Ændre hostnavnet
 # echo "Hvad skal serveren hedde?"
