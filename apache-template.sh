@@ -25,12 +25,7 @@ apt install apache2 -y && \
 apt install mariadb-server -y && \
 apt install php libapache2-mod-php php-mysql -y && \
 apt install certbot python3-certbot-apache -y && \
-apt install composer -y && \
-tput setaf 3 && echo "Tryk enter for at installare phpmyadmin. Åben vejledningen inden du går igang:" && \
-echo "https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04" && \
-tput sgr0 && \
-read && \
-apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl -y
+apt install composer -y
 
 
 # Replace 
